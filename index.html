@@ -309,8 +309,8 @@
             </a>
         </div>
         <div class="info-row">
-           <div class="label">Profession</div>
-          <div class="value">Embroidery business, New GIDC, Katargam.</div>
+           <div class="label">Profession:</div>
+          <div class="value">Embroidery business, <br> New GIDC, Katargam.</div>
         </div>
         <div class="info-row" style="margin-top:6px;">
           <div class="label">Mother</div>
@@ -371,20 +371,39 @@
         </section>
 
       <!-- MORE PHOTOS (CARDS + FULLSCREEN) -->
-      <section class="section wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
-        <div class="section-title">More Photos</div>
+     <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+          <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
 
-        <div class="photo-grid">
-          <div class="photo-card">
-            <img src="https://lh3.googleusercontent.com/pw/AP1GczM57mhG_XEgOdpRv3B8nv4gtWptamV5Sr5_50TkY8xeH0VJofqs8HCBVrq-x-IKu9oBeTaplbf0k93q1fFwMxLQh5qXxMaEzpniBlnbZnoc4XYNmZM30qznIGlJIZovi3oPA3XAie7HFlTbG7PiufUwwQ=w651-h869-s-no-gm?authuser=0" alt="Vatsal photo 1" onclick="openLightbox(this.src)">
+          <div class="lightbox-controls">
+            <button class="zoom-btn" onclick="zoomIn(event)">+</button>
+            <button class="zoom-btn" onclick="zoomOut(event)">−</button>
+
+            <a id="downloadBtn" class="download-btn" download>
+              ⤓
+            </a>
           </div>
-          <div class="photo-card">
-            <img src="https://lh3.googleusercontent.com/pw/AP1GczPwtx1gqRPULyOnweFKp3S92OQFYS1D7i8nOoiC1sXQmHFJ1Ds6O4uDtLDYxm4KyYayelTj86l6fgUt2M6GZywd4EpvRvqUCneilw3vFGVjfm1vb42QZy1WG6nPjadVlkX4RMg7mPH1dEaF-2lXaq0MIQ=w869-h869-s-no-gm?authuser=0" alt="Vatsal photo 2" onclick="openLightbox(this.src)">
-          </div>
+
+          <img id="lightbox-img" src="" alt="Full view">
         </div>
-      </section>
 
-    </section>
+        <section class="section wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
+          <div class="section-title">More Photos</div>
+
+          <div class="photo-grid">
+            <div class="photo-card">
+              <img
+                src="https://lh3.googleusercontent.com/pw/AP1GczNXpQOjIRYBIHaso1NqjFo0Vv5EvReLCCJov5IqccmRctfELY3xsvVLBGbwND8pSl_L4fHLeVSMOHUcmebNLhyYekBIH55GCmIjN4ylClW_Ysc8olp2X0v_Oxkt9gdeUytkXlhzEqRZsI9zFTVPJfN9GA=w651-h869-s-no-gm?authuser=0"
+                alt="Vatsal photo 1" onclick="openLightbox(this.src)">
+            </div>
+            <div class="photo-card">
+              <img
+                src="https://lh3.googleusercontent.com/pw/AP1GczPwtx1gqRPULyOnweFKp3S92OQFYS1D7i8nOoiC1sXQmHFJ1Ds6O4uDtLDYxm4KyYayelTj86l6fgUt2M6GZywd4EpvRvqUCneilw3vFGVjfm1vb42QZy1WG6nPjadVlkX4RMg7mPH1dEaF-2lXaq0MIQ=w869-h869-s-no-gm?authuser=0"
+                alt="Vatsal photo 2" onclick="openLightbox(this.src)">
+            </div>
+          </div>
+        </section>
+
+      </section>
   </main>
 </div>
 
@@ -395,21 +414,43 @@
 </div>
 
 <script>
-  new WOW().init();
+    new WOW().init();
 
-  function openLightbox(src) {
-    const box = document.getElementById('lightbox');
-    const img = document.getElementById('lightbox-img');
-    img.src = src;
-    box.style.display = 'flex';
-  }
+    let zoomLevel = 1;
 
-  function closeLightbox() {
-    document.getElementById('lightbox').style.display = 'none';
-  }
-</script>
+    function openLightbox(src) {
+      zoomLevel = 1;
+      const box = document.getElementById('lightbox');
+      const img = document.getElementById('lightbox-img');
+      img.src = src;
+      img.style.transform = "scale(1)";
+
+      document.getElementById('downloadBtn').href = src;
+
+      box.style.display = 'flex';
+    }
+
+    function closeLightbox(event) {
+      if (event.target.id === "lightbox" || event.target.classList.contains("lightbox-close")) {
+        document.getElementById('lightbox').style.display = 'none';
+      }
+    }
+
+    function zoomIn(event) {
+      event.stopPropagation();
+      zoomLevel += 0.2;
+      document.getElementById('lightbox-img').style.transform = `scale(${zoomLevel})`;
+    }
+
+    function zoomOut(event) {
+      event.stopPropagation();
+      if (zoomLevel > 0.4) zoomLevel -= 0.2;
+      document.getElementById('lightbox-img').style.transform = `scale(${zoomLevel})`;
+    }
+  </script>
 </body>
 </html>
+
 
 
 
