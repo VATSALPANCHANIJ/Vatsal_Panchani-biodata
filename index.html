@@ -1,523 +1,790 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Panchani Vatsal Jaysukhbhai - Biodata</title>
-  <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/pw/AP1GczPNMgjt6_WkAq3YXwNYS3CLMEQgOkvA8VfCcYhUKTq28gE6GZQd65fQpRPMhSI3QWKsDAnnwyTavjfZL1OfmTKb5dJdaj2PPP5--Y_1_EXs-GnpAC98mnU-d6lp93iOiuXXD41oHSj08vZzUO-uZbzObA=w743-h869-s-no-gm?authuser=0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Panchani Vatsal Jaysukhbhai - Biodata</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://lh3.googleusercontent.com/pw/AP1GczPNMgjt6_WkAq3YXwNYS3CLMEQgOkvA8VfCcYhUKTq28gE6GZQd65fQpRPMhSI3QWKsDAnnwyTavjfZL1OfmTKb5dJdaj2PPP5--Y_1_EXs-GnpAC98mnU-d6lp93iOiuXXD41oHSj08vZzUO-uZbzObA=w743-h869-s-no-gm?authuser=0">
 
-  <!-- Animate.css + WOW.js -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- Animate.css + WOW.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@100..800&display=swap" rel="stylesheet">
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    <style>
+        /* language groups */
+        .lang-en {
+            font-family: "Outfit", sans-serif;
+            ;
+            /* use normal body font */
+        }
 
-    body {
-      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #dbe2ec;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px 12px;
-    }
+        .lang-gu {
+            font-family: "Anek Gujarati", system-ui, -apple-system, "Noto Sans Gujarati", sans-serif;
+            font-weight: 500;
+            /* similar weight as English headings/text */
+        }
 
-    .page-wrapper {
-      width: 100%;
-      max-width: 430px;  /* fixed mobile width even on desktop */
-    }
+        /* already existing visibility rules – keep them too */
+        .lang-gu {
+            display: none;
+        }
 
-    .card {
-      background: #f9fafb;
-      border-radius: 26px;
-      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.35);
-      overflow: hidden;
-      border: 1px solid rgba(15, 23, 42, 0.05);
-    }
+        [data-lang="gu"] .lang-en {
+            display: none;
+            font-size: 16px;
+        }
 
-    /* HERO / MAIN PHOTO */
-    .hero {
-      padding: 18px 18px 0;
-      background: #1f2937;
-      border-top-left-radius: 26px;
-      border-top-right-radius: 26px;
-    }
+        [data-lang="gu"] .lang-gu {
+            display: inline;
+            word-spacing: 0%;
+            font-size: 16px;
+        }
 
-    .hero-frame {
-      background: #020617;
-      border-radius: 22px;
-      border: 2px solid #111827;
-      overflow: hidden;
-    }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    .hero-frame img {
-      width: 100%;
-      display: block;
-      object-fit: cover;
-    }
+        body {
+            font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: #dbe2ec;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 12px;
+        }
 
-    .content {
-      padding: 16px 18px 18px;
-    }
+        .page-wrapper {
+            width: 100%;
+            max-width: 430px;
+            /* fixed mobile width even on desktop */
+        }
 
-    .eyebrow {
-      font-size: 0.78rem;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: #9ca3af;
-      margin-bottom: 4px;
-    }
+        .card {
+            background: #f9fafb;
+            border-radius: 26px;
+            box-shadow: 0 18px 45px rgba(15, 23, 42, 0.35);
+            overflow: hidden;
+            border: 1px solid rgba(15, 23, 42, 0.05);
+        }
 
-    .name {
-      font-size: 1.35rem;
-      font-weight: 600;
-      line-height: 1.3;
-      color: #111827;
-    }
+        /* HERO / MAIN PHOTO */
+        .hero {
+            padding: 18px 18px 0;
+            background: #1f2937;
+            border-top-left-radius: 26px;
+            border-top-right-radius: 26px;
+        }
 
-    .role {
-      font-size: 0.86rem;
-      color: #9ca3af;
-      margin-top: 6px;
-    }
+        .hero-frame {
+            background: #020617;
+            border-radius: 22px;
+            border: 2px solid #111827;
+            overflow: hidden;
+        }
 
-    .role span {
-      display: block;
-    }
+        .hero-frame img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
 
-    .section {
-      margin-top: 18px;
-      padding-top: 12px;
-      border-top: 1px solid #e5e7eb;
-    }
+        .content {
+            padding: 16px 18px 18px;
+        }
 
-    .section-title {
-      font-size: 0.8rem;
-      letter-spacing: 0.17em;
-      text-transform: uppercase;
-      font-weight: 600;
-      color: #6b7280;
-      margin-bottom: 8px;
-    }
+        .eyebrow {
+            font-size: 0.78rem;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: #9ca3af;
+            margin-bottom: 4px;
+        }
 
-    .info-row {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.9rem;
-      margin-bottom: 5px;
-    }
+        .name {
+            font-size: 1.35rem;
+            font-weight: 600;
+            line-height: 1.3;
+            color: #111827;
+        }
 
-    .label {
-      font-weight: 500;
-      color: #374151;
-    }
+        .role {
+            font-size: 0.86rem;
+            color: #9ca3af;
+            margin-top: 6px;
+        }
 
-    .value {
-      text-align: right;
-      color: #111827;
-    }
+        .section {
+            margin-top: 18px;
+            padding-top: 12px;
+            border-top: 1px solid #e5e7eb;
+        }
 
-    .para {
-      font-size: 0.9rem;
-      line-height: 1.5;
-      color: #111827;
-    }
+        .section-title {
+            font-size: 0.8rem;
+            letter-spacing: 0.17em;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: #6b7280;
+            margin-bottom: 8px;
+        }
 
-    .subtext {
-      font-size: 0.82rem;
-      color: #6b7280;
-      margin-top: 4px;
-    }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
 
-    .address {
-      font-size: 0.9rem;
-      line-height: 1.4;
-      color: #111827;
-      margin-bottom: 8px;
-    }
+        .label {
+            font-weight: 500;
+            color: #374151;
+        }
 
-    .chip {
-      display: inline-flex;
-      align-items: center;
-      padding: 4px 10px;
-      border-radius: 999px;
-      background: #eef2ff;
-      font-size: 0.78rem;
-      color: #3730a3;
-      margin-top: 4px;
-    }
+        .value {
+            text-align: right;
+            color: #111827;
+        }
 
-    .chip span {
-      font-weight: 600;
-      margin-right: 4px;
-      text-transform: uppercase;
-      font-size: 0.72rem;
-    }
+        .para {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: #111827;
+        }
 
-    /* MORE PHOTOS – CARD DESIGN */
-    .photo-grid {
-      display: flex;
-      gap: 10px;
-    }
+        .subtext {
+            font-size: 0.82rem;
+            color: #6b7280;
+            margin-top: 4px;
+        }
 
-    .photo-card {
-      flex: 1;
-      background: #ffffff;
-      border-radius: 20px;
-      box-shadow: 0 12px 25px rgba(15, 23, 42, 0.18);
-      padding: 8px;
-      position: relative;
-      overflow: hidden;
-    }
+        .address {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            color: #111827;
+            margin-bottom: 8px;
+        }
 
-    .photo-card img {
-      width: 100%;
-      height: 100%;
-      border-radius: 16px;
-      object-fit: cover;
-      cursor: pointer;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-    }
+        .chip {
+            display: inline-flex;
+            align-items: center;
+            padding: 4px 10px;
+            border-radius: 999px;
+            background: #eef2ff;
+            font-size: 0.78rem;
+            color: #3730a3;
+            margin-top: 4px;
+        }
 
-    .photo-card img:hover {
-      transform: scale(1.03);
-      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.3);
-    }
+        .chip span {
+            font-weight: 600;
+            margin-right: 4px;
+            text-transform: uppercase;
+            font-size: 0.72rem;
+        }
 
-    /* FULLSCREEN LIGHTBOX */
-    .lightbox {
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.9);
-      display: none;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-    }
+        /* MORE PHOTOS – CARD DESIGN */
+        .photo-grid {
+            display: flex;
+            gap: 10px;
+        }
 
-    .lightbox img {
-      width: 100%;
-      max-width: 520px;
-      border-radius: 16px;
-      object-fit: contain;
-      animation: zoomIn 0.25s ease;
-    }
+        .photo-card {
+            flex: 1;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 12px 25px rgba(15, 23, 42, 0.18);
+            padding: 8px;
+            position: relative;
+            overflow: hidden;
+        }
 
-    .lightbox-close {
-      position: absolute;
-      top: 15px;
-      right: 20px;
-      font-size: 40px;
-      color: white;
-      cursor: pointer;
-      z-index: 10000;
-    }
+        .photo-card img {
+            width: 100%;
+            height: 100%;
+            border-radius: 16px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
 
-    #lightbox-img {
-      max-width: 90%;
-      max-height: 90%;
-      transition: transform 0.1s ease-out;
-      touch-action: none;
-      /* important for pinch zoom */
-    }
+        .photo-card img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 25px rgba(15, 23, 42, 0.3);
+        }
 
-    .lightbox-controls {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      display: flex;
-      gap: 10px;
-      z-index: 20;
-    }
+        /* FULLSCREEN LIGHTBOX */
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.9);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
 
-    .zoom-btn,
-    .download-btn {
-      background: white;
-      padding: 8px 12px;
-      border-radius: 6px;
-      border: none;
-      font-size: 16px;
-      cursor: pointer;
-    }
+        .lightbox img {
+            width: 100%;
+            max-width: 520px;
+            border-radius: 16px;
+            object-fit: contain;
+            animation: zoomIn 0.25s ease;
+        }
 
-    .zoom-btn:hover,
-    .download-btn:hover {
-      background: #f0f0f0;
-    }
+        .lightbox-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 40px;
+            color: white;
+            cursor: pointer;
+            z-index: 10000;
+        }
 
-    #lightbox-img {
-      max-width: 90%;
-      max-height: 90%;
-      transition: transform 0.2s ease;
-    }
+        #lightbox-img {
+            max-width: 90%;
+            max-height: 90%;
+            transition: transform 0.1s ease-out;
+            touch-action: none;
+            /* important for pinch zoom */
+        }
 
-    @keyframes zoomIn {
-      from {
-        transform: scale(0.8);
-        opacity: 0;
-      }
+        .lightbox-controls {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 20;
+        }
 
-      to {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
+        .zoom-btn,
+        .download-btn {
+            background: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
 
-    @media (max-width: 480px) {
-      .content {
-        padding: 14px 14px 16px;
-      }
-    }
-  </style>
+        .zoom-btn:hover,
+        .download-btn:hover {
+            background: #f0f0f0;
+        }
+
+        #lightbox-img {
+            max-width: 90%;
+            max-height: 90%;
+            transition: transform 0.2s ease;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content {
+                padding: 14px 14px 16px;
+            }
+        }
+
+        /* Language switch – from Uiverse (modified) */
+        .lang-switch-container {
+            display: flex;
+            justify-content: flex-end;
+            /* right side */
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .switch {
+            font-size: 0.875rem;
+            position: relative;
+            display: inline-block;
+            width: 9em;
+            height: 2.6em;
+        }
+
+        .switch input {
+            display: none;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .switch input:checked+.slider .ball {
+            box-shadow: 10px 10px 100px #7f8996;
+        }
+
+        .switch input:checked+.slider .title {
+            left: 40%;
+        }
+
+        .switch input:checked+.slider {
+            background-color: #2f4d5c;
+        }
+
+        .switch input:focus+.slider {
+            box-shadow: 10px 10px 100px #7f8996;
+        }
+
+        .switch input:checked+.slider .ball {
+            left: 72%;
+            transform: rotate(360deg);
+            box-shadow: none;
+            outline: 6px solid rgba(255, 255, 255, 0.278);
+        }
+
+        .switch .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #313033;
+            transition: all 0.4s;
+            border-radius: 30px;
+            color: #fff;
+        }
+
+        .switch .slider .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: 600;
+            transition: all 0.4s;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .switch .slider .ball {
+            background-color: #fff;
+            height: 36px;
+            width: 36px;
+            border-radius: 50%;
+            position: absolute;
+            left: -1px;
+            transition: 0.4s;
+        }
+
+        .switch .slider .ball .icon {
+            position: absolute;
+            top: 58%;
+            left: 53%;
+            transform: translate(-50%, -50%);
+            color: #313033;
+            font-size: 12px;
+        }
+
+        /* language visibility */
+        .lang-gu {
+            display: none;
+        }
+    </style>
 </head>
+
 <body>
-<div class="page-wrapper">
-  <main class="card">
+    <div class="page-wrapper">
+        <main class="card">
 
-    <!-- MAIN PHOTO -->
-    <section class="hero wow animate__animated animate__fadeInDown">
-      <div class="hero-frame">
-        <!-- main image -->
-        <img src="https://lh3.googleusercontent.com/pw/AP1GczNXpQOjIRYBIHaso1NqjFo0Vv5EvReLCCJov5IqccmRctfELY3xsvVLBGbwND8pSl_L4fHLeVSMOHUcmebNLhyYekBIH55GCmIjN4ylClW_Ysc8olp2X0v_Oxkt9gdeUytkXlhzEqRZsI9zFTVPJfN9GA=w651-h869-s-no-gm?authuser=0" alt="Panchani Vatsal Jaysukhbhai">
-      </div>
-    </section>
+            <!-- MAIN PHOTO -->
+            <section class="hero wow animate__animated animate__fadeInDown">
+                <div class="hero-frame">
+                    <!-- main image -->
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczNXpQOjIRYBIHaso1NqjFo0Vv5EvReLCCJov5IqccmRctfELY3xsvVLBGbwND8pSl_L4fHLeVSMOHUcmebNLhyYekBIH55GCmIjN4ylClW_Ysc8olp2X0v_Oxkt9gdeUytkXlhzEqRZsI9zFTVPJfN9GA=w651-h869-s-no-gm?authuser=0"
+                        alt="Panchani Vatsal Jaysukhbhai">
+                </div>
+            </section>
 
-    <!-- TEXT CONTENT -->
-    <section class="content">
+            <section class="content">
 
-      <!-- NAME / ROLE -->
-      <header class="wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
-        <div class="eyebrow">Biodata</div>
-        <div class="name">Panchani Vatsal<br>Jaysukhbhai</div>
-        <div class="role">
-          <span>Web Developer &amp; Social Media Manager</span>
-          <span>IT Sector, Bangalore</span>
-        </div>
-      </header>
+                <!-- LANGUAGE SWITCH -->
+                <div class="lang-switch-container">
+                    <label class="switch">
+                        <input type="checkbox" id="langToggle" onchange="toggleLanguage(this)">
+                        <span class="slider">
+                            <span class="title" id="langTitle">English</span>
+                            <span class="ball">
+                                <span class="icon">અ</span>
+                            </span>
+                        </span>
+                    </label>
+                </div>
 
-      <!-- PERSONAL DETAILS -->
-      <section class="section wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
-        <div class="section-title">Personal Details</div>
-        <div class="info-row">
-          <div class="label">Date of Birth</div>
-          <div class="value">30-10-2004</div>
-        </div>
-        <div class="info-row">
-          <div class="label">Height &amp; Weight</div>
-          <div class="value">6 ft, 55 kg</div>
-        </div>
-        <div class="info-row">
-          <div class="label">Mobile</div>
-          <a href="tel:74870 06211" style="text-decoration: none;">
-              <div class="value">74870 06211</div>
-            </a>
-        </div>
-      </section>
+                <!-- NAME / ROLE -->
+                <header class="wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                    <div class="eyebrow">
+                        <span class="lang lang-en">Biodata</span>
+                        <span class="lang lang-gu">બાયોડેટા</span>
+                    </div>
 
-      <!-- EDUCATION -->
-      <section class="section wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
-        <div class="section-title">Education</div>
-        <p class="para">
-          <span class="label">Highest Qualification:</span>
-          BCA (Bachelor of Computer Applications).
-        </p>
-        <p class="para">
-          <span class="label">Currently Pursuing:</span>
-          MBA in Digital Marketing
-        </p>
-      </section>
+                    <div class="name">
+                        <span class="lang lang-en">Panchani Vatsal Jaysukhbhai</span>
+                        <span class="lang lang-gu" style="font-size: 20px; font-weight: 600;">પાંચાણી  વત્સલ
+                            જયસુખભાઈ</span>
+                    </div>
 
-      <!-- FAMILY -->
-      <section class="section wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
-        <div class="section-title">Family Details</div>
+                    <div class="role">
+                        <span class="lang lang-en">Web Developer &amp; Social Media Manager</span>
+                        <span class="lang lang-gu">વેબ ડેવલપર &amp; સોશિયલ મીડિયા મેનેજર</span>
 
-        <div class="info-row">
-          <div class="label">Father</div>
-          <div class="value">Jaysukhbhai Kalubhai Panchani</div>         
-        </div>
-        <div class="info-row">
-           <div class="label">Mobile</div>
-            <a href="tel:81414 49721" style="text-decoration: none;">
-              <div class="value">81414 49721</div>
-            </a>
-        </div>
-        <div class="info-row">
-           <div class="label">Profession:</div>
-          <div class="value">Embroidery business, <br> New GIDC, Katargam.</div>
-        </div>
-        <div class="info-row" style="margin-top:6px;">
-          <div class="label">Mother</div>
-          <div class="value">Chandrikaben Jaysukhbhai Panchani</div>
-        </div>
-        <div class="info-row">
-          <div class="label">Sibling</div>
-          <div class="value">Hasti Jaysukhbhai Panchani</div>
-        </div>
-      </section>
+                        <span class="lang lang-en">IT Sector, Bangalore</span>
+                        <span class="lang lang-gu">આઈટી સેક્ટર, બેંગલોર</span>
+                    </div>
+                </header>
 
-      <!-- MATERNAL -->
-        <section class="section wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
-          <div class="section-title">Maternal Relatives</div>
-          <p class="para">
-            Hareshbhai Manubhai Suvagiya<br>
-            Kiritbhai Manubhai Suvagiya
-          </p>
-          <a href="https://maps.app.goo.gl/sPgQA2nyZq7MR4SJ6" target="_blank" style="text-decoration: none;">
-            <p class="subtext">
-              Maternal native place: Limbadiya, Gadhada, Botad.
-            </p>
-          </a>
-        </section>
+                <!-- PERSONAL DETAILS -->
+                <section class="section wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                    <div class="section-title">
+                        <span class="lang lang-en">Personal Details</span>
+                        <span class="lang lang-gu">વ્યક્તિગત વિગતો</span>
+                    </div>
 
-        <!-- NATIVE PLACE -->
-        <section class="section wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
-          <div class="section-title">Native Place</div>
-          <a href="https://maps.app.goo.gl/VHftHB8N6Re3BxA67" target="_blank" style="text-decoration: none;">
-            <p class="para">
-              Fachariya, Gariyadhar, Bhavnagar.
-            </p>
-          </a>
-        </section>
+                    <div class="info-row">
+                        <div class="label">
+                            <span class="lang lang-en">Date of Birth</span>
+                            <span class="lang lang-gu">જન્મ તારીખ</span>
+                        </div>
+                        <div class="lang lang-en">30-10-2004</div>
+                        <div class="lang lang-gu">૩૦-૧૦-૨૦૦૪</div>
+                    </div>
 
-        <!-- ADDRESSES -->
-        <section class="section wow animate__animated animate__fadeInUp" data-wow-delay="0.7s">
-          <div class="section-title">Addresses</div>
-          <a href="https://maps.app.goo.gl/DgKQPEkke7opqeUh9" target="_blank" style="text-decoration: none;">
-            <p class="address">
-              <span class="label">Permanent:</span><br>
-              A-203 Jay Ambe Residency,<br>
-              B/H Anand Vatika Residency, Sudama Chowk, Mota Varachha,
-              Surat.
-            </p>
-          </a>
-        </section>
-        <section class="section wow animate__animated animate__fadeInUp" data-wow-delay="0.7s">
-          <a href="https://maps.app.goo.gl/1goNFxuMTTuiBPdi6" target="_blank"
-            style="font-size:20px; text-decoration: none;">
-            <p class="address">
-              <span class="label">Current Location:</span><br>
-              Shree Swaminarayan Gurukul International School,<br>
-              Mysore Road,<br>
-              Bengaluru, Karnataka.
-            </p>
-          </a>
-        </section>
+                    <div class="info-row">
+                        <div class="label">
+                            <span class="lang lang-en">Height &amp; Weight</span>
+                            <span class="lang lang-gu">ઊંચાઈ &amp; વજન</span>
+                        </div>
+                        <div class="value">
+                            <span class="lang lang-en">6 ft, 55 kg</span>
+                            <span class="lang lang-gu">૬ ફૂટ, ૫૫ કિલો</span>
+                        </div>
+                    </div>
 
-      <!-- MORE PHOTOS (CARDS + FULLSCREEN) -->
-   
-       <section class="section wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
-          <div class="section-title">More Photos</div>
-          <div class="photo-grid">
-            <div class="photo-card">
-              <img
-                src="https://lh3.googleusercontent.com/pw/AP1GczM57mhG_XEgOdpRv3B8nv4gtWptamV5Sr5_50TkY8xeH0VJofqs8HCBVrq-x-IKu9oBeTaplbf0k93q1fFwMxLQh5qXxMaEzpniBlnbZnoc4XYNmZM30qznIGlJIZovi3oPA3XAie7HFlTbG7PiufUwwQ=w651-h869-s-no-gm?authuser=0"
-                alt="Vatsal photo 1" onclick="openLightbox(this.src)">
-            </div>
-            <div class="photo-card">
-              <img
-                src="https://lh3.googleusercontent.com/pw/AP1GczPwtx1gqRPULyOnweFKp3S92OQFYS1D7i8nOoiC1sXQmHFJ1Ds6O4uDtLDYxm4KyYayelTj86l6fgUt2M6GZywd4EpvRvqUCneilw3vFGVjfm1vb42QZy1WG6nPjadVlkX4RMg7mPH1dEaF-2lXaq0MIQ=w869-h869-s-no-gm?authuser=0"
-                alt="Vatsal photo 2" onclick="openLightbox(this.src)">
-            </div>
-          </div>
-        </section>
+                    <div class="info-row">
+                        <div class="label">
+                            <span class="lang lang-en">Mobile</span>
+                            <span class="lang lang-gu">મોબાઇલ</span>
+                        </div>
+                        <a href="tel:+917487006211" style="text-decoration: none; color: #313033;">
+                            <div class="lang lang-en">74870 06211</div>
+                            <div class="lang lang-gu">૭૪૮૭૦ ૦૬૨૧૧</div>
+                        </a>
+                    </div>
+                </section>
 
-      </section>
-  </main>
-</div>
+                <!-- EDUCATION -->
+                <section class="section wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                    <div class="section-title">
+                        <span class="lang lang-en">Education</span>
+                        <span class="lang lang-gu">શિક્ષણ</span>
+                    </div>
 
-<!-- FULLSCREEN LIGHTBOX -->
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
-  <span class="lightbox-close">&times;</span>
-  <img id="lightbox-img" src="" alt="Full view">
-</div>
+                    <p class="para">
+                        <span class="label">
+                            <span class="lang lang-en">Highest Qualification:</span>
+                            <span class="lang lang-gu">ઉચ્ચતમ લાયકાત:</span>
+                        </span>
+                        <span class="value">
+                            <span class="lang lang-en">BCA (Bachelor of Computer Applications).</span>
+                            <span class="lang lang-gu">બી.સી.એ (BCA) (બેચલર ઓફ કમ્પ્યુટર એપ્લિકેશન્સ).</span>
+                        </span>
+                    </p>
 
-<script>
-    new WOW().init();
+                    <p class="para">
+                        <span class="label">
+                            <span class="lang lang-en">Currently Pursuing:</span>
+                            <span class="lang lang-gu">હાલમાં અભ્યાસ:</span>
+                        </span>
+                        <span class="value">
+                            <span class="lang lang-en">MBA in Digital Marketing</span>
+                            <span class="lang lang-gu">ડિજિટલ માર્કેટિંગમાં એમ.બી.એ. (MBA)</span>
+                        </span>
+                    </p>
+                </section>
 
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
+                <!-- FAMILY -->
+                <section class="section wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                    <div class="section-title">
+                        <span class="lang lang-en">Family Details</span>
+                        <span class="lang lang-gu">કુટુંબની વિગતો</span>
+                    </div>
 
-    let scale = 1;
-    let lastScale = 1;
-    let startDistance = 0;
+                    <div class="info-row">
+                        <div class="label">
+                            <span class="lang lang-en">Father</span>
+                            <span class="lang lang-gu">પિતાનું નામ</span>
+                        </div>
+                        <div class="value">
+                            <span class="lang lang-en">Jaysukhbhai Kalubhai Panchani</span>
+                            <span class="lang lang-gu">જયસુખભાઈ કાળુભાઈ પાંચાણી </span>
+                        </div>
+                    </div>
 
-    function openLightbox(src) {
-      scale = 1;
-      lastScale = 1;
-      startDistance = 0;
+                    <div class="info-row">
+                        <div class="label">
+                            <span class="lang lang-en">Mobile</span>
+                            <span class="lang lang-gu">મોબાઇલ</span>
+                        </div>
+                        <a href="tel:+918141449721" style="text-decoration: none; color: #313033;">
+                            <div class="lang lang-en">81414 49721</div>
+                            <div class="lang lang-gu">૮૧૪૧૪ ૪૯૭૨૧</div>
+                        </a>
+                    </div>
 
-      lightboxImg.src = src;
-      lightboxImg.style.transform = 'scale(1)';
-      lightbox.style.display = 'flex';
-    }
+                    <div class="info-row">
+                        <div class="label">
+                            <span class="lang lang-en">Profession:</span>
+                            <span class="lang lang-gu">વ્યવસાય:</span>
+                        </div>
+                        <div class="value">
+                            <span class="lang lang-en">Embroidery business, <br>New GIDC, Katargam.</span>
+                            <span class="lang lang-gu">એમ્બ્રોઈડરીનો વ્યવસાય, <br>ન્યૂ જી.આઈ.ડી.સી., કતારગામ.</span>
+                        </div>
+                    </div>
 
-    function closeLightbox() {
-      lightbox.style.display = 'none';
-    }
+                    <div class="info-row" style="margin-top:6px;">
+                        <div class="label">
+                            <span class="lang lang-en">Mother</span>
+                            <span class="lang lang-gu">માતાનું નામ</span>
+                        </div>
+                        <div class="value">
+                            <span class="lang lang-en">Chandrikaben Jaysukhbhai Panchani</span>
+                            <span class="lang lang-gu">ચંદ્રિકાબેન જયસુખભાઈ પાંચાણી </span>
+                        </div>
+                    </div>
 
-    // --------- PINCH ZOOM (MOBILE) ---------
-    lightboxImg.addEventListener('touchstart', function (e) {
-      if (e.touches.length === 2) {
-        e.preventDefault();
-        startDistance = getDistance(e.touches[0], e.touches[1]);
-        lastScale = scale;
-      }
-    }, { passive: false });
+                    <div class="info-row">
+                        <div class="label">
+                            <span class="lang lang-en">Sister</span>
+                            <span class="lang lang-gu">બહેન</span>
+                        </div>
+                        <div class="value">
+                            <span class="lang lang-en">Hasti Jaysukhbhai Panchani</span>
+                            <span class="lang lang-gu">હસ્તી જયસુખભાઈ પાંચાણી </span>
+                        </div>
+                    </div>
+                </section>
 
-    lightboxImg.addEventListener('touchmove', function (e) {
-      if (e.touches.length === 2 && startDistance > 0) {
-        e.preventDefault();
-        const newDistance = getDistance(e.touches[0], e.touches[1]);
-        const factor = newDistance / startDistance;
-        scale = clamp(lastScale * factor, 1, 4); // zoom from 1x to 4x
-        lightboxImg.style.transform = `scale(${scale})`;
-      }
-    }, { passive: false });
+                <!-- NATIVE PLACE -->
+                <section class="section wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
+                    <div class="section-title">
+                        <span class="lang lang-en">Native Place</span>
+                        <span class="lang lang-gu">મૂળ ગામ</span>
+                    </div>
+                    <a href="https://maps.app.goo.gl/VHftHB8N6Re3BxA67" target="_blank" style="text-decoration: none;">
+                        <p class="para">
+                            <span class="lang lang-en">Fachariya, Gariyadhar, Bhavnagar.</span>
+                            <span class="lang lang-gu">ફાચરિયા, ગારીયાધાર, ભાવનગર.</span>
+                        </p>
+                    </a>
+                </section>
 
-    lightboxImg.addEventListener('touchend', function (e) {
-      if (e.touches.length < 2) {
-        startDistance = 0;
-      }
-    });
+                <!-- MATERNAL -->
+                <section class="section wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+                    <div class="section-title">
+                        <span class="lang lang-en">Maternal Relatives</span>
+                        <span class="lang lang-gu">મામેરા સંબંધીઓ</span>
+                    </div>
 
-    function getDistance(t1, t2) {
-      const dx = t1.clientX - t2.clientX;
-      const dy = t1.clientY - t2.clientY;
-      return Math.sqrt(dx * dx + dy * dy);
-    }
+                    <p class="para">
+                        <span class="value">
+                            <span class="lang lang-en">
+                                Hareshbhai Manubhai Suvagiya<br>
+                                Kiritbhai Manubhai Suvagiya
+                            </span>
+                            <span class="lang lang-gu">
+                                હરેશભાઈ મનુભાઈ સુવાગીયા<br>
+                                કિરીટભાઈ મનુભાઈ સુવાગીયા
+                            </span>
+                        </span>
+                    </p>
 
-    function clamp(value, min, max) {
-      return Math.min(Math.max(value, min), max);
-    }
+                    <a href="https://maps.app.goo.gl/sPgQA2nyZq7MR4SJ6" target="_blank" style="text-decoration: none;">
+                        <p class="subtext">
+                            <span class="lang lang-en">Maternal native place: Limbadiya, Gadhada, Botad.</span>
+                            <span class="lang lang-gu">મામાનું ગામ: લિંબડિયા, ગઢડા, બોટાદ.</span>
+                        </p>
+                    </a>
+                </section>
 
-    // --------- MOUSE WHEEL ZOOM (DESKTOP) ---------
-    lightboxImg.addEventListener('wheel', function (e) {
-      e.preventDefault();
-      const delta = e.deltaY > 0 ? -0.1 : 0.1;
-      scale = clamp(scale + delta, 1, 4);
-      lightboxImg.style.transform = `scale(${scale})`;
-    });
-  </script>
+                <!-- ADDRESSES -->
+                <section class="section wow animate__animated animate__fadeInUp" data-wow-delay="0.7s">
+                    <div class="section-title">
+                        <span class="lang lang-en">Addresses</span>
+                        <span class="lang lang-gu">સરનામું</span>
+                    </div>
+
+                    <a href="https://maps.app.goo.gl/DgKQPEkke7opqeUh9" target="_blank" style="text-decoration: none;">
+                        <p class="address">
+                            <span class="label">
+                                <span class="lang lang-en">Permanent:</span>
+                                <span class="lang lang-gu">કાયમી સરનામું:</span>
+                            </span><br>
+                            <span class="lang lang-en">
+                                A-203 Jay Ambe Residency,<br>
+                                B/H Anand Vatika Residency, Sudama Chowk,<br>
+                                Mota Varachha, Surat.
+                            </span>
+                            <span class="lang lang-gu">
+                                એ-203 જય અંબે રેસીડેન્સી,<br>
+                                 આનંદ વાટિકા રેસીડેન્સી ની પાછળ , સુદામા ચોક,<br>
+                                મોટાવરાછા, સુરત.
+                            </span>
+                        </p>
+                    </a>
+                </section>
+
+                <section class="section wow animate__animated animate__fadeInUp" data-wow-delay="0.7s">
+                    <a href="https://maps.app.goo.gl/1goNFxuMTTuiBPdi6" target="_blank"
+                        style="font-size:20px; text-decoration: none;">
+                        <p class="address">
+                            <span class="label">
+                                <span class="lang lang-en">Current Location:</span>
+                                <span class="lang lang-gu">હાલનું સરનામું:</span>
+                            </span><br>
+                            <span class="lang lang-en">
+                                Shree Swaminarayan Gurukul International School,<br>
+                                Mysore Road, Bangalore, Karnataka.
+                            </span>
+                            <span class="lang lang-gu">
+                                શ્રી સ્વામિનારાયણ ગુરુકુલ ઇન્ટરનેશનલ સ્કૂલ,<br>
+                                મૈસુર રોડ, બેંગલોર, કર્ણાટક.
+                            </span>
+                        </p>
+                    </a>
+                </section>
+
+                <!-- MORE PHOTOS (CARDS + FULLSCREEN) -->
+                <!-- FULLSCREEN LIGHTBOX -->
+
+                <!-- MORE PHOTOS (CARDS + FULLSCREEN) -->
+                <section class="section wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
+                    <div class="section-title lang lang-en">More Photos</div>
+                    <div class="section-title lang lang-gu ">ફોટો</div>
+                    <div class="photo-grid">
+                        <div class="photo-card">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczM57mhG_XEgOdpRv3B8nv4gtWptamV5Sr5_50TkY8xeH0VJofqs8HCBVrq-x-IKu9oBeTaplbf0k93q1fFwMxLQh5qXxMaEzpniBlnbZnoc4XYNmZM30qznIGlJIZovi3oPA3XAie7HFlTbG7PiufUwwQ=w651-h869-s-no-gm?authuser=0"
+                                alt="Vatsal photo 1" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="photo-card">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczPwtx1gqRPULyOnweFKp3S92OQFYS1D7i8nOoiC1sXQmHFJ1Ds6O4uDtLDYxm4KyYayelTj86l6fgUt2M6GZywd4EpvRvqUCneilw3vFGVjfm1vb42QZy1WG6nPjadVlkX4RMg7mPH1dEaF-2lXaq0MIQ=w869-h869-s-no-gm?authuser=0"
+                                alt="Vatsal photo 2" onclick="openLightbox(this.src)">
+                        </div>
+                    </div>
+                </section>
+        </main>
+    </div>
+
+    <!-- FULLSCREEN LIGHTBOX -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="Full view">
+    </div>
+
+    <script>
+        new WOW().init();
+
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        let scale = 1;
+        let lastScale = 1;
+        let startDistance = 0;
+
+        function openLightbox(src) {
+            scale = 1;
+            lastScale = 1;
+            startDistance = 0;
+
+            lightboxImg.src = src;
+            lightboxImg.style.transform = 'scale(1)';
+            lightbox.style.display = 'flex';
+        }
+
+        function closeLightbox() {
+            lightbox.style.display = 'none';
+        }
+
+        // --------- PINCH ZOOM (MOBILE) ---------
+        lightboxImg.addEventListener('touchstart', function (e) {
+            if (e.touches.length === 2) {
+                e.preventDefault();
+                startDistance = getDistance(e.touches[0], e.touches[1]);
+                lastScale = scale;
+            }
+        }, { passive: false });
+
+        lightboxImg.addEventListener('touchmove', function (e) {
+            if (e.touches.length === 2 && startDistance > 0) {
+                e.preventDefault();
+                const newDistance = getDistance(e.touches[0], e.touches[1]);
+                const factor = newDistance / startDistance;
+                scale = clamp(lastScale * factor, 1, 4); // zoom from 1x to 4x
+                lightboxImg.style.transform = `scale(${scale})`;
+            }
+        }, { passive: false });
+
+        lightboxImg.addEventListener('touchend', function (e) {
+            if (e.touches.length < 2) {
+                startDistance = 0;
+            }
+        });
+
+        function getDistance(t1, t2) {
+            const dx = t1.clientX - t2.clientX;
+            const dy = t1.clientY - t2.clientY;
+            return Math.sqrt(dx * dx + dy * dy);
+        }
+
+        function clamp(value, min, max) {
+            return Math.min(Math.max(value, min), max);
+        }
+
+        // --------- MOUSE WHEEL ZOOM (DESKTOP) ---------
+        lightboxImg.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            const delta = e.deltaY > 0 ? -0.1 : 0.1;
+            scale = clamp(scale + delta, 1, 4);
+            lightboxImg.style.transform = `scale(${scale})`;
+        });
+    </script>
+
+    <script>
+        function toggleLanguage(checkbox) {
+            const isGujarati = checkbox.checked;
+            document.documentElement.setAttribute('data-lang', isGujarati ? 'gu' : 'en');
+
+            const title = document.getElementById('langTitle');
+            title.textContent = isGujarati ? 'ગુજરાતી' : 'English';
+        }
+    </script>
+
+
+
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
